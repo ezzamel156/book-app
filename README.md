@@ -14,7 +14,7 @@ Please follow the steps below to get the application up and running :
     `DB_USERNAME=root`\
     `DB_PASSWORD=`
 
-1. run `php artisan migrate:fresh -seed` in cmd
+1. run `php artisan migrate:fresh --seed` in cmd
 1. run `php artisan serve` in cmd
 1. go to your browser and navigate to `localhost:8000` 
 1. login using the following credentials 
