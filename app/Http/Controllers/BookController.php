@@ -21,8 +21,8 @@ class BookController extends Controller
         $validatedData = $request->validate([
             'name' => ['required'],
             'address' => ['required'],
-            'qty' => ['required'],
-            'price' => ['required'],
+            'qty' => ['required', 'integer', 'min:0'],
+            'price' => ['required', 'integer', 'min:0'],
         ]);
         
         $book = Book::create($validatedData);        
