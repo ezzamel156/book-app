@@ -20,12 +20,11 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return redirect()->route('book');
-})->middleware(['auth'])->name('dashboard');
-
-Route::middleware(['auth'])->group(function() {
-    Route::get('/book', [BookController::class, 'index'])->name('book');
-    Route::post('/book', [BookController::class, 'store']);
-});
+})->name('dashboard');
 
 
-require __DIR__.'/auth.php';
+Route::get('/book', [BookController::class, 'index'])->name('book');
+Route::post('/book', [BookController::class, 'store']);
+
+
+//require __DIR__.'/auth.php';
