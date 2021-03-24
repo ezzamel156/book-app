@@ -38,36 +38,24 @@
                                     <div class="mt-1 relative rounded-md shadow-sm">
                                         <input required type="text" name="name" id="name" class="w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">                                        
                                     </div>
-                                    @if($errors->has('name')) 
-                                        <span class="text-sm text-red-600"> {{ $errors->first('name') }} </span>
-                                    @endif
                                 </div>
                                 <div class="mb-2">
                                     <label for="address" class="block text-sm font-medium text-gray-700">address</label>
                                     <div class="mt-1 relative rounded-md shadow-sm">
                                         <textarea required type="text" name="address" id="address" class="block w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>                                
                                     </div>
-                                    @if($errors->has('address')) 
-                                        <span class="text-sm text-red-600"> {{ $errors->first('address') }} </span>
-                                    @endif
                                 </div>
                                 <div class="mb-2">
                                     <label for="qty" class="block text-sm font-medium text-gray-700">quantity</label>
                                     <div class="mt-1 relative rounded-md shadow-sm">
                                         <input required type="number" name="qty" id="qty" class="w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >                                   
                                     </div>
-                                    @if($errors->has('qty')) 
-                                        <span class="text-sm text-red-600"> {{ $errors->first('qty') }} </span>
-                                    @endif
                                 </div>
                                 <div class="mb-2">
                                     <label for="price" class="block text-sm font-medium text-gray-700">price</label>
                                     <div class="mt-1 relative rounded-md shadow-sm">
                                         <input required type="number" name="price" id="price" class="w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" >                                   
                                     </div>
-                                    @if($errors->has('price')) 
-                                        <span class="text-sm text-red-600"> {{ $errors->first('price') }} </span>
-                                    @endif
                                 </div>
                                 <div class="text-right mt-4">
                                     <button type="submit" class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300">
